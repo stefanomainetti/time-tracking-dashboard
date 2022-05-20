@@ -1,0 +1,23 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "sass": "sass --watch src/scss/main.scss:dist/css/main.css",
+    "browserify": "browserify -p esmify src/js/advice.js > src/js/main-bundle.js",
+    "minify": "minify src/js/main-bundle.js > dist/js/main-bundle-min.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "esmify": "^2.1.1",
+    "minify": "^8.0.4",
+    "sass": "^1.51.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.2.4"
+  }
+}

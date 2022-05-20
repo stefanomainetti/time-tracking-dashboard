@@ -1,0 +1,20 @@
+//1. Config files and helpers
+@use "./abstracts/colors";
+@use "./abstracts/type";
+
+//2. Vendor
+@use "./vendor/normalize";
+
+// 3. Base styles
+
+@use "./base/base";
+
+// 4. Layout
+
+@use "./layout/layout";
+
+// 5. Components
+
+@use "./components/footer";
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;800&display=swap");
