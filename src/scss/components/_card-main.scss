@@ -1,0 +1,97 @@
+@use "../abstracts/colors";
+@use "../abstracts/type";
+@use "../layout/layout";
+
+.card-main {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: colors.$dark-blue;
+  @media (min-width: layout.$media-min) {
+    grid-area: a;
+  }
+}
+
+.card-main-title {
+  @include type.font(colors.$pale-blue, type.$font-light, 0.9rem);
+  margin: 0;
+  padding: 0;
+  @media (min-width: layout.$media-min) {
+    font-size: 0.9rem;
+  }
+}
+
+.profile-name {
+  @include type.font(white, type.$font-light, 1.5rem);
+  margin: 0;
+  padding: 0;
+  @media (min-width: layout.$media-min) {
+    font-size: 2.3rem;
+    line-height: 3rem;
+  }
+}
+
+.card-main-header {
+  display: flex;
+  background-color: colors.$blue;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: layout.$media-min) {
+    flex-grow: 1;
+    align-items: flex-start;
+  }
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  margin-block: 2rem 1.5rem;
+  @media (min-width: layout.$media-min) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-inline: 2rem;
+    gap: 1.8rem;
+    margin-block: 2.1rem 5rem;
+  }
+}
+
+.profile-image {
+  width: 4.5rem;
+  aspect-ratio: 1;
+  border: 3px solid white;
+  border-radius: 50%;
+  @media (min-width: layout.$media-min) {
+    width: 5.5rem;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 1rem;
+  @media (min-width: layout.$media-min) {
+    margin-inline: 0;
+  }
+}
+
+.card-options {
+  margin-block: 1.3rem;
+  color: colors.$desaturated-blue;
+  input {
+    display: none;
+  }
+  input:checked + span {
+    color: white;
+  }
+  label:hover {
+    color: white;
+    cursor: pointer;
+  }
+  @media (min-width: layout.$media-min) {
+    margin-inline: 2rem;
+    margin-block: 1.5rem;
+  }
+}

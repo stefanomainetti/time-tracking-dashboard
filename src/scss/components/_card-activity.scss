@@ -1,0 +1,149 @@
+@use "../abstracts/colors";
+@use "../abstracts/type";
+@use "../layout/layout";
+
+.card-activity {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 1rem;
+  background-color: colors.$light-orange;
+}
+
+.card-activity-header {
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 2rem;
+  border-radius: 1rem;
+  .card-icon {
+    width: 5rem;
+    height: 2rem;
+    margin-right: 1rem;
+    z-index: 1000;
+  }
+  @media (min-width: layout.$media-min) {
+    height: 2.8rem;
+    .card-icon {
+      height: 2.8rem;
+    }
+  }
+}
+
+.card-content {
+  z-index: 9000;
+  border-radius: 1rem;
+  background-color: colors.$dark-blue;
+  padding-inline: 1.5rem;
+  padding-block: 1.5rem;
+  flex-grow: 1;
+}
+
+#work {
+  background-color: colors.$light-orange;
+  #icon-work {
+    background: url("../../../dist/images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+  }
+}
+
+#play {
+  background-color: colors.$soft-blue;
+  #icon-play {
+    background: url("../../../dist/images/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+  }
+}
+
+#study {
+  background-color: colors.$light-red;
+  #icon-study {
+    background: url("../../../dist/images/icon-study.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+  }
+}
+
+#exercise {
+  background-color: colors.$lime-green;
+  #icon-exercise {
+    background: url("../../../dist/images/icon-exercise.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+}
+
+#social {
+  background-color: colors.$violet;
+  #icon-social {
+    background: url("../../../dist/images/icon-social.svg");
+    background-repeat: no-repeat;
+    background-position: 80% 25%;
+  }
+}
+
+#self-care {
+  background-color: colors.$soft-orange;
+  #icon-self-care {
+    background: url("../../../dist/images/icon-self-care.svg");
+    background-repeat: no-repeat;
+    background-position: 80% 40%;
+  }
+}
+
+.card-content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-activity-title {
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 0;
+  @include type.font(white, type.$font-normal, 1.1rem);
+  margin: 0;
+  padding: 0;
+}
+
+.activity-menu {
+  width: 2rem;
+  aspect-ratio: 1;
+  background: url("../../../dist/images/icon-ellipsis.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+.activity-menu:hover {
+  background: url("../../../dist/images/icon-ellipsis-hover.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.card-content-report {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (min-width: layout.$media-min) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .current-time {
+    @include type.font(white, type.$font-light, 2rem);
+    margin: 0;
+    padding: 0;
+    @media (min-width: layout.$media-min) {
+      font-size: 3.3rem;
+      padding-top: 0.5rem;
+    }
+  }
+  .previous-time {
+    @include type.font(colors.$pale-blue, type.$font-light, 1rem);
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -14,16 +14,121 @@
   </head>
   <body>
     <main>
-      <div class="main-container grid">
-        <h1>Content</h1>
-      </div>
+      <div class="main-container">
+        <div class="card-main">
+          <div class="card-main-header">
+            <div class="profile-container">
+              <div class="image-container">
+                <img src="./dist/images/image-jeremy.png" alt="Profile image" class="profile-image" />
+              </div>
+              <div class="text-container">
+                <h1 class="card-main-title">Report for</h1>
+                <h2 class="profile-name">Jeremy Robson</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card-options">
+            <fieldset>
+              <label>
+                 <input type="radio" name="time_options" id="day" aria-label="daily-view">
+                 <span>Daily</span>
+                </label>
+              <label>
+                <input type="radio" name="time_options" id="week"><span>Weekly</span>
+                </label>
+              <label>
+                <input aria-label="monthly-view" type="radio" name="time_options" id="month"><span>Monthly</span>
+                </label>
+            </fieldset>
+          </div>
+        </div>
+        <div id="work" class="card-activity">
+          <div class="card-activity-header">
+        <div id="icon-work" class="card-icon"></div>
+          </div>
+          <div class="card-content">
+            <div class="card-content-header">
+              <h3 class="card-activity-title">Work</h3>
+              <div role="menu" class="activity-menu"></div>
+            </div>
+            <div class="card-content-report">
+              <h4 class="current-time">32hrs</h4>
+              <h4 class="previous-time">Last Week - 36hrs</h4>
+            </div>
+          </div>
+        </div>
+        <div id="play" class="card-activity">
+          <div class="card-activity-header"><div id="icon-play" class="card-icon"></div></div>
+          <div class="card-content">
+            <div class="card-content-header">
+              <h3 class="card-activity-title">Play</h3>
+              <div role="menu" class="activity-menu"></div>
+            </div>
+            <div class="card-content-report">
+              <h4 class="current-time">32hrs</h4>
+              <h4 class="previous-time">Last Week - 36hrs</h4>
+            </div>
+          </div>
+        </div>
+              <div id="study" class="card-activity">
+          <div class="card-activity-header"><div id="icon-study" class="card-icon"></div></div>
+          <div class="card-content">
+            <div class="card-content-header">
+              <h3 class="card-activity-title">Study</h3>
+              <div role="menu" class="activity-menu"></div>
+            </div>
+            <div class="card-content-report">
+              <h4 class="current-time">32hrs</h4>
+              <h4 class="previous-time">Last Week - 36hrs</h4>
+            </div>
+          </div>
+        </div>
+              <div id="exercise" class="card-activity">
+          <div class="card-activity-header"><div id="icon-exercise" class="card-icon"></div></div>
+          <div class="card-content">
+            <div class="card-content-header">
+              <h3 class="card-activity-title">Exercise</h3>
+              <div role="menu" class="activity-menu"></div>
+            </div>
+            <div class="card-content-report">
+              <h4 class="current-time">32hrs</h4>
+              <h4 class="previous-time">Last Week - 36hrs</h4>
+            </div>
+          </div>
+        </div>
+              <div id="social" class="card-activity">
+          <div class="card-activity-header"><div id="icon-social" class="card-icon"></div></div>
+          <div class="card-content">
+            <div class="card-content-header">
+              <h3 class="card-activity-title">Social</h3>
+              <div role="menu" class="activity-menu"></div>
+            </div>
+            <div class="card-content-report">
+              <h4 class="current-time">32hrs</h4>
+              <h4 class="previous-time">Last Week - 36hrs</h4>
+            </div>
+          </div>
+        </div>
+              <div id="self-care" class="card-activity">
+          <div class="card-activity-header"><div id="icon-self-care" class="card-icon"></div></div>
+          <div class="card-content">
+            <div class="card-content-header">
+              <h3 class="card-activity-title">Self Care</h3>
+              <div role="menu" class="activity-menu"></div>
+            </div>
+            <div class="card-content-report">
+              <h4 class="current-time">32hrs</h4>
+              <h4 class="previous-time">Last Week - 36hrs</h4>
+            </div>
+          </div>
+        </div>
     </main>
     <footer>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Stefano Mainetti</a>.
       </div>
     </footer>
   </body>

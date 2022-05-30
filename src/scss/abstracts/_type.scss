@@ -10,8 +10,9 @@ $font-bold: 800;
 
 // Font mixin
 
-@mixin font-normal {
+@mixin font($color, $weight, $size) {
   font-family: $font-stack;
-  font-weight: $font-normal;
-  font-size: 18px;
+  font-weight: #{$weight};
+  font-size: #{$size};
+  color: #{$color};
 }
