@@ -47,6 +47,9 @@
     background-repeat: no-repeat;
     background-position: 50% 30%;
   }
+  @media (min-width: layout.$media-min) {
+    grid-area: b;
+  }
 }
 
 #play {
@@ -55,6 +58,9 @@
     background: url("../../../dist/images/icon-play.svg");
     background-repeat: no-repeat;
     background-position: 50% 10%;
+  }
+  @media (min-width: layout.$media-min) {
+    grid-area: c;
   }
 }
 
@@ -65,6 +71,9 @@
     background-repeat: no-repeat;
     background-position: 50% 20%;
   }
+  @media (min-width: layout.$media-min) {
+    grid-area: d;
+  }
 }
 
 #exercise {
@@ -73,6 +82,9 @@
     background: url("../../../dist/images/icon-exercise.svg");
     background-repeat: no-repeat;
     background-position: 50% 0%;
+  }
+  @media (min-width: layout.$media-min) {
+    grid-area: e;
   }
 }
 
@@ -83,6 +95,9 @@
     background-repeat: no-repeat;
     background-position: 80% 25%;
   }
+  @media (min-width: layout.$media-min) {
+    grid-area: f;
+  }
 }
 
 #self-care {
@@ -91,6 +106,9 @@
     background: url("../../../dist/images/icon-self-care.svg");
     background-repeat: no-repeat;
     background-position: 80% 40%;
+  }
+  @media (min-width: layout.$media-min) {
+    grid-area: g;
   }
 }
 

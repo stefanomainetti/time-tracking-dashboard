@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "sass": "sass --watch src/scss/main.scss:dist/css/main.css",
-    "browserify": "browserify -p esmify src/js/advice.js > src/js/main-bundle.js",
+    "browserify": "browserify -p esmify src/js/main.js > src/js/main-bundle.js",
     "minify": "minify src/js/main-bundle.js > dist/js/main-bundle-min.js"
   },
   "keywords": [],
