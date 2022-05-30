@@ -1,5 +1,6 @@
 @use "../abstracts/colors";
 @use "../abstracts/type";
+@use "../layout/layout";
 
 *,
 *::before,
@@ -16,7 +17,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   @include type.font(colors.$pale-blue, type.$font-normal, 18px);
+  @media (min-width: layout.$media-min) {
+    height: 100vh;
+  }
 }
 
 footer {

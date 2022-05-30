@@ -338,36 +338,6 @@ template {
   display: none;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box !important;
-}
-
-body {
-  overflow-x: hidden;
-  background-color: hsl(226deg, 43%, 10%);
-  height: auto;
-  width: 100vw;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: hsl(236deg, 100%, 87%);
-}
-
-footer {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-}
-
 .flex {
   display: flex;
   gap: var(--gap, 1.2rem);
@@ -398,9 +368,9 @@ footer {
 .main-container {
   flex-grow: 1;
   margin: 0;
-  padding: 0;
+  padding-inline: 1.5rem;
   height: auto;
-  width: auto;
+  width: 100vw;
   margin-inline: 1.5rem;
   margin-block: 5rem;
   display: grid;
@@ -409,9 +379,11 @@ footer {
 @media (min-width: 55rem) {
   .main-container {
     grid-template-areas: "a b c d" "a e f g";
-    grid-template-columns: 23% auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-inline: 11.5vw;
     gap: 1.9rem;
+    width: auto;
+    padding: 0;
   }
 }
 
@@ -429,6 +401,42 @@ fieldset {
     align-items: flex-start;
     gap: 1rem;
   }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: hsl(226deg, 43%, 10%);
+  height: auto;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: hsl(236deg, 100%, 87%);
+}
+@media (min-width: 55rem) {
+  body {
+    height: 100vh;
+  }
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .attribution {
@@ -605,6 +613,11 @@ fieldset {
   background-repeat: no-repeat;
   background-position: 50% 30%;
 }
+@media (min-width: 55rem) {
+  #work {
+    grid-area: b;
+  }
+}
 
 #play {
   background-color: hsl(195deg, 74%, 62%);
@@ -613,6 +626,11 @@ fieldset {
   background: url("../../../dist/images/icon-play.svg");
   background-repeat: no-repeat;
   background-position: 50% 10%;
+}
+@media (min-width: 55rem) {
+  #play {
+    grid-area: c;
+  }
 }
 
 #study {
@@ -623,6 +641,11 @@ fieldset {
   background-repeat: no-repeat;
   background-position: 50% 20%;
 }
+@media (min-width: 55rem) {
+  #study {
+    grid-area: d;
+  }
+}
 
 #exercise {
   background-color: hsl(145deg, 58%, 55%);
@@ -631,6 +654,11 @@ fieldset {
   background: url("../../../dist/images/icon-exercise.svg");
   background-repeat: no-repeat;
   background-position: 50% 0%;
+}
+@media (min-width: 55rem) {
+  #exercise {
+    grid-area: e;
+  }
 }
 
 #social {
@@ -641,6 +669,11 @@ fieldset {
   background-repeat: no-repeat;
   background-position: 80% 25%;
 }
+@media (min-width: 55rem) {
+  #social {
+    grid-area: f;
+  }
+}
 
 #self-care {
   background-color: hsl(43deg, 84%, 65%);
@@ -649,6 +682,11 @@ fieldset {
   background: url("../../../dist/images/icon-self-care.svg");
   background-repeat: no-repeat;
   background-position: 80% 40%;
+}
+@media (min-width: 55rem) {
+  #self-care {
+    grid-area: g;
+  }
 }
 
 .card-content-header {

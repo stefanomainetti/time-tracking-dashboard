@@ -32,18 +32,20 @@ $media-min: 55rem;
 .main-container {
   flex-grow: 1;
   margin: 0;
-  padding: 0;
+  padding-inline: 1.5rem;
   height: auto;
-  width: auto;
+  width: 100vw;
   margin-inline: 1.5rem;
   margin-block: 5rem;
   display: grid;
   gap: 1.5rem;
   @media (min-width: $media-min) {
     grid-template-areas: "a b c d" "a e f g";
-    grid-template-columns: 23% auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-inline: 11.5vw;
     gap: 1.9rem;
+    width: auto;
+    padding: 0;
   }
 }
 

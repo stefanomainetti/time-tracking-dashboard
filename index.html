@@ -11,6 +11,7 @@
     />
     <title>Frontend Mentor | Time tracking dashboard</title>
     <link rel="stylesheet" href="./dist/css/main.css" />
+    <script type="module" src="./dist/js/main-bundle-min.js" defer></script>
   </head>
   <body>
     <main>
@@ -28,16 +29,16 @@
             </div>
           </div>
           <div class="card-options">
-            <fieldset>
+            <fieldset id="time-options">
               <label>
-                 <input type="radio" name="time_options" id="day" aria-label="daily-view">
+                 <input type="radio" name="time_options" id="daily">
                  <span>Daily</span>
                 </label>
               <label>
-                <input type="radio" name="time_options" id="week"><span>Weekly</span>
+                <input type="radio" name="time_options" id="weekly"><span>Weekly</span>
                 </label>
               <label>
-                <input aria-label="monthly-view" type="radio" name="time_options" id="month"><span>Monthly</span>
+                <input aria-label="monthly-view" type="radio" name="time_options" id="monthly"><span>Monthly</span>
                 </label>
             </fieldset>
           </div>
@@ -52,8 +53,8 @@
               <div role="menu" class="activity-menu"></div>
             </div>
             <div class="card-content-report">
-              <h4 class="current-time">32hrs</h4>
-              <h4 class="previous-time">Last Week - 36hrs</h4>
+              <h4 id="Work-current" class="current-time"></h4>
+              <h4 id="Work-previous" class="previous-time"></h4>
             </div>
           </div>
         </div>
@@ -65,8 +66,8 @@
               <div role="menu" class="activity-menu"></div>
             </div>
             <div class="card-content-report">
-              <h4 class="current-time">32hrs</h4>
-              <h4 class="previous-time">Last Week - 36hrs</h4>
+              <h4 id="Play-current"class="current-time"></h4>
+              <h4 id="Play-previous" class="previous-time"></h4>
             </div>
           </div>
         </div>
@@ -78,8 +79,8 @@
               <div role="menu" class="activity-menu"></div>
             </div>
             <div class="card-content-report">
-              <h4 class="current-time">32hrs</h4>
-              <h4 class="previous-time">Last Week - 36hrs</h4>
+              <h4 id="Study-current" class="current-time"></h4>
+              <h4 id="Study-previous" class="previous-time"></h4>
             </div>
           </div>
         </div>
@@ -91,8 +92,8 @@
               <div role="menu" class="activity-menu"></div>
             </div>
             <div class="card-content-report">
-              <h4 class="current-time">32hrs</h4>
-              <h4 class="previous-time">Last Week - 36hrs</h4>
+              <h4 id="Exercise-current" class="current-time"></h4>
+              <h4 id="Exercise-previous" class="previous-time"></h4>
             </div>
           </div>
         </div>
@@ -104,8 +105,8 @@
               <div role="menu" class="activity-menu"></div>
             </div>
             <div class="card-content-report">
-              <h4 class="current-time">32hrs</h4>
-              <h4 class="previous-time">Last Week - 36hrs</h4>
+              <h4 id="Social-current" class="current-time"></h4>
+              <h4 id="Social-previous" class="previous-time"></h4>
             </div>
           </div>
         </div>
@@ -117,8 +118,8 @@
               <div role="menu" class="activity-menu"></div>
             </div>
             <div class="card-content-report">
-              <h4 class="current-time">32hrs</h4>
-              <h4 class="previous-time">Last Week - 36hrs</h4>
+              <h4 id="Self Care-current" class="current-time"></h4>
+              <h4 id="Self Care-previous" class="previous-time"></h4>
             </div>
           </div>
         </div>
