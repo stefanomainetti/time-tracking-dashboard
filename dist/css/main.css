@@ -615,7 +615,7 @@ footer {
   background-color: hsl(15deg, 100%, 70%);
 }
 #work #icon-work {
-  background: url("../../dist/images/icon-work.svg");
+  background: url("../images/icon-work.svg");
   background-repeat: no-repeat;
   background-position: 50% 30%;
 }
@@ -629,7 +629,7 @@ footer {
   background-color: hsl(195deg, 74%, 62%);
 }
 #play #icon-play {
-  background: url("../../dist/images/icon-play.svg");
+  background: url("../images/icon-play.svg");
   background-repeat: no-repeat;
   background-position: 50% 10%;
 }
@@ -643,7 +643,7 @@ footer {
   background-color: hsl(348deg, 100%, 68%);
 }
 #study #icon-study {
-  background: url("../../dist/images/icon-study.svg");
+  background: url("../images/icon-study.svg");
   background-repeat: no-repeat;
   background-position: 50% 20%;
 }
@@ -657,7 +657,7 @@ footer {
   background-color: hsl(145deg, 58%, 55%);
 }
 #exercise #icon-exercise {
-  background: url("../../dist/images/icon-exercise.svg");
+  background: url("../images/icon-exercise.svg");
   background-repeat: no-repeat;
   background-position: 50% 0%;
 }
@@ -671,7 +671,7 @@ footer {
   background-color: hsl(264deg, 64%, 52%);
 }
 #social #icon-social {
-  background: url("../../dist/images/icon-social.svg");
+  background: url("../images/icon-social.svg");
   background-repeat: no-repeat;
   background-position: 80% 25%;
 }
@@ -685,7 +685,7 @@ footer {
   background-color: hsl(43deg, 84%, 65%);
 }
 #self-care #icon-self-care {
-  background: url("../../dist/images/icon-self-care.svg");
+  background: url("../images/icon-self-care.svg");
   background-repeat: no-repeat;
   background-position: 80% 40%;
 }
@@ -716,7 +716,7 @@ footer {
 .activity-menu {
   width: 2rem;
   aspect-ratio: 1;
-  background: url("../../dist/images/icon-ellipsis.svg");
+  background: url("../images/icon-ellipsis.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
@@ -724,7 +724,7 @@ footer {
 
 .activity-menu:hover,
 .activity-menu:focus {
-  background: url("../../dist/images/icon-ellipsis-hover.svg");
+  background: url("../images/icon-ellipsis-hover.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
