@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/stefanomainetti/time-tracking-dashboard)
-- Live Site URL: [Add live site URL here](https://stefanomainetti.github.io/time-tracking-dashboard/)
+- Solution URL: [https://github.com/stefanomainetti/time-tracking-dashboard](https://github.com/stefanomainetti/time-tracking-dashboard)
+- Live Site URL: [https://stefanomainetti.github.io/time-tracking-dashboard/](https://stefanomainetti.github.io/time-tracking-dashboard/)
 
 ## My process
 
