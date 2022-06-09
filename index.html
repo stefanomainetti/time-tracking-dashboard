@@ -11,7 +11,7 @@
     />
     <title>Frontend Mentor | Time tracking dashboard</title>
     <link rel="stylesheet" href="./dist/css/main.css" />
-    <script type="module" src="./dist/js/main-bundle-min.js" defer></script>
+    <script src="./dist/js/main-bundle-min.js" defer></script>
   </head>
   <body>
     <main>
@@ -30,15 +30,15 @@
           </div>
           <div class="card-options">
             <fieldset id="time-options">
-              <label class="label-wrapper" tabindex="0" id="daily" role="button" aria-pressed="true" aria-label="daily view">
+              <div class="label-wrapper" tabindex="0" id="daily" role="switch" aria-pressed="true" aria-label="daily view">
                  <input id="radio-daily" class="radio" type="radio" name="time_options" checked><span class="input-label">Daily</span>
-                </label>
-              <label class="label-wrapper" tabindex="0" id="weekly" role="button" aria-pressed="false" aria-label="weekly view">
+                </div>
+              <div class="label-wrapper" tabindex="0" id="weekly" role="switch" aria-pressed="false" aria-label="weekly view">
                 <input id="radio-weekly" class="radio" type="radio" name="time_options"><span class="input-label">Weekly</span>
-                </label>
-              <label class="label-wrapper" tabindex="0" id="monthly" role="button" aria-pressed="false" aria-label="monthly view">
+                </div>
+              <div class="label-wrapper" tabindex="0" id="monthly" role="switch" aria-pressed="false" aria-label="monthly view">
                 <input id="radio-monthly" class="radio" type="radio" name="time_options"><span class="input-label">Monthly</span>
-                </label>
+                </div>
             </fieldset>
           </div>
         </div>
@@ -117,8 +117,8 @@
               <div tabindex="0" role="menu" class="activity-menu" aria-label="activity-menu-self-care"></div>
             </div>
             <div class="card-content-report">
-              <h4 id="Self Care-current" class="current-time"></h4>
-              <h4 id="Self Care-previous" class="previous-time"></h4>
+              <h4 id="Self-Care-current" class="current-time"></h4>
+              <h4 id="Self-Care-previous" class="previous-time"></h4>
             </div>
           </div>
         </div>
