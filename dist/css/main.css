@@ -548,21 +548,27 @@ footer {
   margin-block: 1.3rem;
   color: hsl(235deg, 45%, 61%);
 }
-.card-options input {
+.card-options .radio {
   display: none;
 }
-.card-options input:checked + span {
+.card-options .radio:checked + span {
   color: white;
 }
 .card-options label:hover {
   color: white;
   cursor: pointer;
 }
+.card-options label:focus {
+  color: white;
+}
 @media (min-width: 55rem) {
   .card-options {
     margin-inline: 2rem;
     margin-block: 1.5rem;
   }
+}
+.card-options .input-label {
+  pointer-events: none;
 }
 
 .card-activity {
@@ -716,7 +722,8 @@ footer {
   cursor: pointer;
 }
 
-.activity-menu:hover {
+.activity-menu:hover,
+.activity-menu:focus {
   background: url("../../../dist/images/icon-ellipsis-hover.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;

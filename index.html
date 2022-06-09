@@ -30,15 +30,14 @@
           </div>
           <div class="card-options">
             <fieldset id="time-options">
-              <label>
-                 <input type="radio" name="time_options" id="daily">
-                 <span>Daily</span>
+              <label class="label-wrapper" tabindex="0" id="daily" role="button" aria-pressed="true" aria-label="daily view">
+                 <input id="radio-daily" class="radio" type="radio" name="time_options" checked><span class="input-label">Daily</span>
                 </label>
-              <label>
-                <input type="radio" name="time_options" id="weekly"><span>Weekly</span>
+              <label class="label-wrapper" tabindex="0" id="weekly" role="button" aria-pressed="false" aria-label="weekly view">
+                <input id="radio-weekly" class="radio" type="radio" name="time_options"><span class="input-label">Weekly</span>
                 </label>
-              <label>
-                <input aria-label="monthly-view" type="radio" name="time_options" id="monthly"><span>Monthly</span>
+              <label class="label-wrapper" tabindex="0" id="monthly" role="button" aria-pressed="false" aria-label="monthly view">
+                <input id="radio-monthly" class="radio" type="radio" name="time_options"><span class="input-label">Monthly</span>
                 </label>
             </fieldset>
           </div>
@@ -50,7 +49,7 @@
           <div class="card-content">
             <div class="card-content-header">
               <h3 class="card-activity-title">Work</h3>
-              <div role="menu" class="activity-menu"></div>
+              <div tabindex="0" role="menu" class="activity-menu" aria-label="activity-menu-work"></div>
             </div>
             <div class="card-content-report">
               <h4 id="Work-current" class="current-time"></h4>
@@ -63,7 +62,7 @@
           <div class="card-content">
             <div class="card-content-header">
               <h3 class="card-activity-title">Play</h3>
-              <div role="menu" class="activity-menu"></div>
+              <div tabindex="0" role="menu" class="activity-menu" aria-label="activity-menu-play"></div>
             </div>
             <div class="card-content-report">
               <h4 id="Play-current"class="current-time"></h4>
@@ -76,7 +75,7 @@
           <div class="card-content">
             <div class="card-content-header">
               <h3 class="card-activity-title">Study</h3>
-              <div role="menu" class="activity-menu"></div>
+              <div tabindex="0" role="menu" class="activity-menu" aria-label="activity-menu-study"></div>
             </div>
             <div class="card-content-report">
               <h4 id="Study-current" class="current-time"></h4>
@@ -89,7 +88,7 @@
           <div class="card-content">
             <div class="card-content-header">
               <h3 class="card-activity-title">Exercise</h3>
-              <div role="menu" class="activity-menu"></div>
+              <div tabindex="0" role="menu" class="activity-menu" aria-label="activity-menu-exercise"></div>
             </div>
             <div class="card-content-report">
               <h4 id="Exercise-current" class="current-time"></h4>
@@ -102,7 +101,7 @@
           <div class="card-content">
             <div class="card-content-header">
               <h3 class="card-activity-title">Social</h3>
-              <div role="menu" class="activity-menu"></div>
+              <div tabindex="0" role="menu" class="activity-menu" aria-label="activity-menu-social"></div>
             </div>
             <div class="card-content-report">
               <h4 id="Social-current" class="current-time"></h4>
@@ -115,7 +114,7 @@
           <div class="card-content">
             <div class="card-content-header">
               <h3 class="card-activity-title">Self Care</h3>
-              <div role="menu" class="activity-menu"></div>
+              <div tabindex="0" role="menu" class="activity-menu" aria-label="activity-menu-self-care"></div>
             </div>
             <div class="card-content-report">
               <h4 id="Self Care-current" class="current-time"></h4>

@@ -80,18 +80,24 @@
 .card-options {
   margin-block: 1.3rem;
   color: colors.$desaturated-blue;
-  input {
+  .radio {
     display: none;
   }
-  input:checked + span {
+  .radio:checked + span {
     color: white;
   }
   label:hover {
     color: white;
     cursor: pointer;
   }
+  label:focus {
+    color: white;
+  }
   @media (min-width: layout.$media-min) {
     margin-inline: 2rem;
     margin-block: 1.5rem;
+  }
+  .input-label {
+    pointer-events: none;
   }
 }

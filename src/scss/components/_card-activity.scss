@@ -136,7 +136,8 @@
   cursor: pointer;
 }
 
-.activity-menu:hover {
+.activity-menu:hover,
+.activity-menu:focus {
   background: url("../../../dist/images/icon-ellipsis-hover.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
